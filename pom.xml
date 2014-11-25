@@ -10,4 +10,33 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
+    
+    <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>2.4.1</version>
+            <configuration>
+              <useReleaseProfile>false</useReleaseProfile>
+              <releaseProfiles>release</releaseProfiles>
+              <autoVersionSubmodules>true</autoVersionSubmodules>
+            </configuration>
+          </plugin>
+        </plugins>
+    </build>
+    
+    <scm>
+        <connection>scm:git:https://github.com/aeraln/prueba.git</connection>
+        <developerConnection>scm:git:git@github.com:aeraln/prueba.git</developerConnection>
+        <url>https://github.com/aeraln/prueba</url>
+        <tag>HEAD</tag>
+    </scm>
+    
+    <distributionManagement>
+        <repository>
+            <id>bintray</id>
+            <url>https://api.bintray.com/maven/aeraln/maven/prueba</url>
+        </repository>
+    </distributionManagement>
+    
 </project>
