@@ -7,5 +7,33 @@
             <username>aeraln</username>
             <password>b5f94010d8b747848e162583da6a1f71d936f397</password>
         </server>
-    </servers>    
+    </servers>
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>central</id>
+                    <name>bintray</name>
+                    <url>http://jcenter.bintray.com</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>central</id>
+                    <name>bintray-plugins</name>
+                    <url>http://jcenter.bintray.com</url>
+                </pluginRepository>
+            </pluginRepositories>
+            <id>bintray</id>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>bintray</activeProfile>
+    </activeProfiles>    
 </settings>
